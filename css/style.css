@@ -1,0 +1,354 @@
+.accordion-button,
+.linkFont {
+  font-weight: 500
+}
+
+@font-face {
+  font-family: Jost;
+  src: url('/src/font/static/Jost-Regular.ttf') format('ttf'), url('/src/font/static/Jost-Medium.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal
+}
+
+nav{
+  box-shadow: 0 0 10px 1px #acacac;
+}
+
+@media (max-width:991px) {
+  nav{
+    padding: 0;
+  }
+
+  nav .navbar-toggle {
+    border: 1px solid #605353;
+    padding: 0px 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    width: 45px;
+    text-align: center;
+  }
+  nav .active {
+    background-color: white;
+    color: black;
+  }
+
+
+  .navbar-collapse{
+    display: flex;
+    justify-content: center;
+  }
+
+  .parent-nav
+  {
+    width: 40%;
+    background: rgb(224 193 161);
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+
+
+  /*start nav*/
+  .navbar-toggle{
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*end nav*/
+
+
+
+
+  /* home */
+  aside .image-aside
+  {
+    display: none;
+    
+  }
+  aside .body-aside
+  {
+    border-top:solid rgb(224 193 161);
+  }
+  /* home */
+
+
+  /* service */
+
+  .service .one-service .image-service
+  {
+    display: none !important;
+  }
+
+  /* serivce */
+
+
+  .conclusion .content {
+    font-Size: 35px !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+  font-size: 35px
+}
+
+h3 {
+  font-size: 25px
+}
+
+.linkFont{
+  font-size: 19px;
+}
+
+h4 {
+  font-size: 22px
+}
+
+h5 {
+  font-size: 20px
+}
+
+h6 {
+  font-size: 18px
+}
+
+.linkFont:hover,
+.primart1 {
+  color: #cda274
+}
+
+.primart2 {
+  color: #292f36
+}
+
+.primart3 {
+  color: #f4f0ec
+}
+
+a {
+  text-decoration: none !important
+}
+
+.linkFont {
+  color: #292f36
+}
+
+.accordion-button,
+.icons {
+  font-size: 20px !important
+}
+
+.positionIcons {
+  position: fixed;
+  top: 400px;
+  padding: 10px
+}
+
+.icons {
+  color: #fff
+}
+
+.font {
+  font-family: 'DM Serif Display'
+}
+
+.jost {
+  font-family: Jost, sans-serif
+}
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0 !important
+}
+
+
+/*
+for title in everyp ages
+
+*/
+
+h1.jost{
+  text-align: center;
+  font-size: calc(0.7rem + 1.5vw);
+}
+/*
+for title in everyp ages
+*/
+
+
+footer a {
+  color: #000;
+  font-size: 23px;
+  margin: 5px 0
+}
+
+.btn-contact{
+    background:#292F36;
+    border-radius: 10px;
+    padding:9px 30px;
+    color:white;
+    border:1px solid #292F36;
+    margin-Right: 20px;
+    transition:.3s
+}
+.btn-contact span
+{
+    font-Size:18px
+}
+.btn-contact:hover{
+    color: black;
+    background: rgba(25, 118, 210, 0.04);
+}
+/* end global */
+
+
+
+
+
+
+
+/* start nav */
+nav{
+    z-index:999;position:sticky; top:0
+}
+nav ul li a
+{
+    font-size:19px
+}
+/* end nav */
+
+/* start home */
+.head-home .parentSectionImg
+{
+    border-Radius: 70px; overflow: hidden
+}
+.head-home .parentSectionImg .position-relative
+{
+    width:100%;
+    height:650px
+}
+.head-home .parentSectionImg .position-absolute
+{
+    top:0; 
+    left:0;
+    padding: 15px
+}
+
+.head-home .parentSectionImg .position-absolute .text-center
+{
+    font-Size:65px; 
+    font-Weight: 600
+}
+
+aside .image-aside div
+{
+    overflow:hidden ; 
+    border-Radius: 0 350px 0 150px;
+    height: 550px
+}
+
+aside .body-aside .content-aside
+{
+    font-Size:39px;
+    font-Weight: 500; 
+    text-Align: right ; 
+    line-Height:70px
+}
+/* end home */
+
+
+
+
+
+
+
+/* start service */
+
+.right{
+    flex-direction: row-reverse;
+}
+
+.left{
+    flex-direction: row;
+}
+.full
+{
+    height: 100%;
+    width: 100%;
+}
+/* end service */
+
+
+
+
+
+
+/* start contact */
+.inp,
+.inpTextArea {
+    border-width: 0 0 1px 0;
+    width: 100%;
+    padding: 7px;
+    font-size: 20px;
+}
+
+.inp::placeholder,
+.inpTextArea::placeholder {
+    font-weight: bold !important;
+}
+
+.inp:focus,
+.inpTextArea:focus {
+    outline: 0 !important;
+}
+
+.inpTextArea {
+    min-height: 150px;
+    max-height: 150px;
+}
+.iconStyle
+{
+    font-Size: 24px;
+    transition: 300ms
+}
+.iconStyle:hover
+{
+    transform: rotate(360deg)
+}
+/* end contact */
+
+
+/* start Conclusion */
+.conclusion
+{
+    background: #292F36;
+    border-Radius: 50px;
+    margin: 80px 0
+}
+.conclusion .content
+{
+    font-Size: 40px;
+    width: 50%
+}
+.conclusion a
+{
+    background: #CDA274;
+    border-Radius: 18px;
+    box-Shadow: 0px 10px 20px 0px #1F2022;
+    border: 1px solid #CDA274;
+    padding: 5px 20px;
+    transition: .5s;
+}
+.conclusion a:hover
+{
+    color: black;
+    background: rgba(174, 201, 228, 0.04);
+}
+/* end Conclusion */
